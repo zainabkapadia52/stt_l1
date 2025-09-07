@@ -34,13 +34,16 @@
 # print("Done")
 # print("extra indent") # error
 
+"""Palindrome check."""
 from typing import List
 def ispalindrome(word: str) -> bool:
+    """Return True if the word reads the same forward and backward."""
     rev = word[::-1]
     return rev == word
 
 
 def result(text: str) -> None:
+    """Print 'good' if palindrome else 'bad'."""
     if ispalindrome(text):
         print("good")
     else:
@@ -48,12 +51,14 @@ def result(text: str) -> None:
 
 
 def check_multiple() -> None:
+    """Print each word with its palindrome verdict."""
     words: List[str] = ["mom", "hello", "cry", "moon", "level"]
     for w in words:
         print(w, ispalindrome(w))
 
 
 def bad_func() -> None:
+    """Replicate the original loop prints without unreachable code."""
     for i in range(5):
         if i == 2:
             print("middle")
@@ -62,6 +67,7 @@ def bad_func() -> None:
 
 
 def main() -> None:
+    """Run the same calls as the original script."""
     x = "civic"
     result(x)
     check_multiple()
@@ -72,4 +78,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
