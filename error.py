@@ -1,7 +1,7 @@
 # x="civic"
-# def ispalindrome(word):   
+# def ispalindrome(word):
 #      # function to check palindrome
-#   rev=word[::-1]   
+#   rev=word[::-1]
 #   if (rev==word):
 #    return True
 #   else:
